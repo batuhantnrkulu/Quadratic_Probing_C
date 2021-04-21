@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
-#include <conio.h>
 
 const int M = 16673; // tablo uzunlugu - > asal sayi
 //Global degisken erisilebilir
@@ -179,7 +178,6 @@ int main(void)
 			str[i] = temp;
 		}
 	}
-    getch();
     return 0;
 }
  
