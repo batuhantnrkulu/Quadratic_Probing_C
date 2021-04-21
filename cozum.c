@@ -98,7 +98,6 @@ int search(int key, char *str){
  
 int main(void)
 {
-    int M = 16673; // tablo uzunlugu - > asal sayi
     
 	char str[30];
 	int length, key;
