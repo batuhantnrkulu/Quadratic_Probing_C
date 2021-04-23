@@ -112,14 +112,12 @@ int main(void)
  		// her bir tablo hücresi 30 harflik olsun.
  		hash_table[i] = (char *) malloc(sizeof(char) * 30);
 	}  
-	
-	flag = (int *)malloc(sizeof(int) * M);
+
+	//Tüm flag elemanlar baslangicta 0 olarak belirlenir bu NULL degerinin temsilcisi.
  
-    //Tüm flag elemanlar baslangicta 0 olarak belirlenir bu NULL degerinin temsilcisi.
-    for (i = 0; i < M; i++)
-    {
-        flag[i] = 0;
-    }
+	flag = (int *)calloc(sizeof(int), M);
+ 
+ 
 	
 	char dosya_adi[30];
 	scanf("%s", dosya_adi);
